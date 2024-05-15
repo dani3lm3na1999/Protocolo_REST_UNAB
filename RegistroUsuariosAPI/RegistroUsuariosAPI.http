@@ -1,0 +1,37 @@
+﻿@RegistroUsuariosAPI_HostAddress = https://localhost:7145
+
+GET {{RegistroUsuariosAPI_HostAddress}}/usuarios
+
+###
+
+POST {{RegistroUsuariosAPI_HostAddress}}/usuarios
+Content-Type: application/json
+
+{
+    "nombre": "Roberto",
+    "apellido": "Peñate",
+    "edad": 26,
+    "direccion": "Chalatenango Barrio el Centro, El Salvador, Centro América",
+    "telefono": "+503 74123650"
+  }
+###
+
+GET {{RegistroUsuariosAPI_HostAddress}}/usuarios/4
+
+###
+
+PUT {{RegistroUsuariosAPI_HostAddress}}/usuarios/4
+Content-Type: application/json
+
+{
+    "nombre": "Alejandro",
+    "apellido": "Morales",
+    "edad": 28,
+    "direccion": "Chalatenango Barrio las Centro, El Salvador, Centro América",
+    "telefono": "+503 74123650"
+  }
+###
+
+DELETE {{RegistroUsuariosAPI_HostAddress}}/usuarios/4
+
+###
